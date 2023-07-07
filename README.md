@@ -2176,7 +2176,7 @@ https://microsoftlearning.github.io/AI-102-AIEngineer/Instructions/10b-language-
        
        
 ######################################################################################## 
-</details>
+
 ##  D. QA 
 
 https://learn.microsoft.com/en-us/training/paths/build-qna-solution/ 
@@ -2472,10 +2472,11 @@ If precision is low but recall is high, it means that the model recognizes the e
 If precision is high but recall is low, it means that the model doesn't always recognize the entity, but when the model extracts the entity, the correct label is applied.
 
 ########################################################################################     
-      
+</details>      
   
 # 4. Implement knowledge mining with Azure Cognitive Search(5–10%)
 
+<details><summary></summary>
  https://learn.microsoft.com/en-us/training/paths/implement-knowledge-mining-azure-cognitive-search/     
        
 
@@ -2682,9 +2683,10 @@ Azure Cognitive Search lets you query an index using a REST endpoint or inside t
        
        
 ######################################################################################## 
-
+</details>
 # 5.  Implement conversational AI solutions 	(15–20%)	
 
+<details><summary></summary>
 https://learn.microsoft.com/en-us/training/paths/create-conversational-ai-solutions/ 
        
 
@@ -2827,3 +2829,4 @@ A **recognizer**, which interprets user input to determine semantic intent. Reco
 
 
 In addition to these elements, a dialog has memory in which values are stored as properties. **Properties** can be defined at various scopes, including the user scope (variables that store information for the lifetime of the user session with the bot, such as user.greeted) and dialog scope (variables that persist for the lifetime of the dialog, such as dialog.response).
+</details>
