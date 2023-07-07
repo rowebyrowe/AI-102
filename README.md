@@ -302,7 +302,9 @@ Immersive Reader is part of Azure Applied AI Services, and is an inclusively des
 
 ######################################################################################## 
 </details>
+
 # 2. Implement image and video processing solutions 	(15–20%)	
+
 <details><summary></summary>
 https://learn.microsoft.com/en-us/training/paths/create-computer-vision-solutions-azure-cognitive-services/
 
@@ -1243,7 +1245,9 @@ https://learn.microsoft.com/en-us/rest/api/formrecognizer/2.0/get-analyze-form-r
 
 ######################################################################################## 
 </details>
+
 # 3. Implement natural language processing solutions 	(25–30%)	
+
 <details><summary></summary>
  https://learn.microsoft.com/en-us/training/paths/process-translate-text-azure-cognitive-services/ 
  
@@ -2684,6 +2688,7 @@ Azure Cognitive Search lets you query an index using a REST endpoint or inside t
        
 ######################################################################################## 
 </details>
+
 # 5.  Implement conversational AI solutions 	(15–20%)	
 
 <details><summary></summary>
