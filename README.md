@@ -4,7 +4,7 @@ Python - https://learn.microsoft.com/en-us/python/api/overview/azure/cognitive-s
 
 
 # 1. Plan and manage an Azure AI solution 	(25–30%)	
-
+<details>
 https://learn.microsoft.com/en-us/training/paths/prepare-for-ai-engineering/                                                                             https://learn.microsoft.com/en-us/training/paths/provision-manage-azure-cognitive-services/  
 
  ## Select the appropriate Azure AI service
@@ -298,7 +298,7 @@ https://learn.microsoft.com/en-us/azure/applied-ai-services/immersive-reader/ove
 
 Immersive Reader is part of Azure Applied AI Services, and is an inclusively designed tool that implements proven techniques to improve reading comprehension for new readers, language learners, and people with learning differences such as dyslexia.
 
- 
+</details>
 ######################################################################################## 
 
 # 2. Implement image and video processing solutions 	(15–20%)	
