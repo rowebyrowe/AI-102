@@ -2478,7 +2478,7 @@ If precision is high but recall is low, it means that the model doesn't always r
 ########################################################################################     
 </details>      
   
-# 4. Implement knowledge mining with Azure Cognitive Search(5–10%)
+# 4. Implement knowledge mining with Azure Cognitive Search (5–10%)
 
 <details><summary></summary>
  https://learn.microsoft.com/en-us/training/paths/implement-knowledge-mining-azure-cognitive-search/     
