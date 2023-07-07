@@ -4,8 +4,8 @@ Python - https://learn.microsoft.com/en-us/python/api/overview/azure/cognitive-s
 
 
 
-<details><summary>
-# 1. Plan and manage an Azure AI solution 	(25–30%)	</summary>
+# 1. Plan and manage an Azure AI solution 	(25–30%)	
+<details><summary></summary>
 https://learn.microsoft.com/en-us/training/paths/prepare-for-ai-engineering/                                                                             https://learn.microsoft.com/en-us/training/paths/provision-manage-azure-cognitive-services/  
 
  ## Select the appropriate Azure AI service
