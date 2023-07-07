@@ -299,11 +299,11 @@ https://learn.microsoft.com/en-us/azure/applied-ai-services/immersive-reader/ove
 
 Immersive Reader is part of Azure Applied AI Services, and is an inclusively designed tool that implements proven techniques to improve reading comprehension for new readers, language learners, and people with learning differences such as dyslexia.
 
-</details>
+
 ######################################################################################## 
-
+</details>
 # 2. Implement image and video processing solutions 	(15–20%)	
-
+<details><summary></summary>
 https://learn.microsoft.com/en-us/training/paths/create-computer-vision-solutions-azure-cognitive-services/
 
 https://learn.microsoft.com/en-us/training/paths/extract-text-from-images-documents/ 
@@ -1242,9 +1242,9 @@ https://learn.microsoft.com/en-us/rest/api/formrecognizer/2.0/get-analyze-form-r
 
 
 ######################################################################################## 
-
+</details>
 # 3. Implement natural language processing solutions 	(25–30%)	
- 
+<details><summary></summary>
  https://learn.microsoft.com/en-us/training/paths/process-translate-text-azure-cognitive-services/ 
  
 ## Analyze text
@@ -2176,6 +2176,7 @@ https://microsoftlearning.github.io/AI-102-AIEngineer/Instructions/10b-language-
        
        
 ######################################################################################## 
+</details>
 ##  D. QA 
 
 https://learn.microsoft.com/en-us/training/paths/build-qna-solution/ 
