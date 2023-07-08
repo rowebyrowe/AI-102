@@ -12,7 +12,7 @@ https://learn.microsoft.com/en-us/training/paths/prepare-for-ai-engineering/    
 
 <details><summary>Select the appropriate service for a vision solution</summary>
  
-**Vision**
+
 1. Image analysis	
 2. Video analysis	
 3. Image classification	
@@ -25,7 +25,7 @@ https://learn.microsoft.com/en-us/training/paths/prepare-for-ai-engineering/    
 
 <details><summary>Select the appropriate service for a language analysis solution</summary>
  
-**Language**
+
 1. Text analysis	
 2. Question Answering	
 3. Language understanding
@@ -36,7 +36,7 @@ https://learn.microsoft.com/en-us/training/paths/prepare-for-ai-engineering/    
 
 <details><summary>Select the appropriate service for a decision-support solution</summary>
  
-**Decision**
+
 1. Anomaly detection
 2. Content moderation
 3. Content personalization
@@ -46,7 +46,7 @@ https://learn.microsoft.com/en-us/training/paths/prepare-for-ai-engineering/    
 
 <details><summary>Select the appropriate service in Cognitive Services for a speech solution</summary>
  
-**Speech**
+
 1. Speech to Text	
 2. Text to Speech	
 3. Speech Translation	
@@ -56,9 +56,6 @@ https://learn.microsoft.com/en-us/training/paths/prepare-for-ai-engineering/    
 
 
 <details><summary>Select the appropriate Applied AI services</summary>
-## Applied AI Services
-
-You can use Cognitive Services to build your own AI solutions, and they also underpin Azure Applied AI Services that provide out-of-the-box solutions for common AI scenarios. Applied AI Services include:
 
 **Azure Form Recognizer** - an optical character recognition (OCR) solution that can extract semantic meaning from forms, such as invoices, receipts, and others.
 
