@@ -57,111 +57,110 @@ https://learn.microsoft.com/en-us/training/paths/prepare-for-ai-engineering/    
 
 <details><summary>Select the appropriate Applied AI services</summary>
 
-**Azure Form Recognizer** - an optical character recognition (OCR) solution that can extract semantic meaning from forms, such as invoices, receipts, and others.
+1. **Azure Form Recognizer** - an optical character recognition (OCR) solution that can extract semantic meaning from forms, such as invoices, receipts, and others.
 
-**Azure Metrics Advisor** - A service build on the Anomaly Detector cognitive service that simplifies real-time monitoring and response to critical metrics.
+2. **Azure Metrics Advisor** - A service build on the Anomaly Detector cognitive service that simplifies real-time monitoring and response to critical metrics.
 
-**Azure Video Analyzer** for Media - A comprehensive video analysts solution build on the Video Indexer cognitive service.
+3. **Azure Video Analyzer** for Media - A comprehensive video analysts solution build on the Video Indexer cognitive service.
 
-**Azure Immersive Reader** - A reading solution that supports people of all ages and abilities.
+4. **Azure Immersive Reader** - A reading solution that supports people of all ages and abilities.
 
-**Azure Bot Service** - A cloud service for delivering conversational AI solutions, or bots.
+5. **Azure Bot Service** - A cloud service for delivering conversational AI solutions, or bots.
 
-**Azure Cognitive Search** - A cloud-scale search solution that uses cognitive services to extract insights from data and documents.
+6. **Azure Cognitive Search** - A cloud-scale search solution that uses cognitive services to extract insights from data and documents.
  
 </details>
 
 ## Plan and configure security for Azure AI services
--> Manage account keys
-<details><summary></summary>
+
+<details><summary>Manage account keys</summary>
  
 </details>
 
--> Manage authentication for a resource
-<details><summary></summary>
+
+<details><summary>Manage authentication for a resource</summary>
  
 </details>
 
--> Secure services by using Azure Virtual Networks
-<details><summary></summary>
+
+<details><summary>Secure services by using Azure Virtual Networks</summary>
  
 </details>
 
--> Plan for a solution that meets Responsible AI principles
-<details><summary></summary>
+
+<details><summary>Plan for a solution that meets Responsible AI principles</summary>
  
 </details>
 
-## Create and manage an Azure AI service
--> Create an Azure AI resource
-<details><summary></summary>
+## Create and manage an Azure AI service ##
+
+<details><summary>Create an Azure AI resource</summary>
  
 </details>
 
--> Configure diagnostic logging
-<details><summary></summary>
+
+<details><summary>Configure diagnostic logging</summary>
  
 </details>
 
--> Manage costs for Azure AI services
-<details><summary></summary>
+
+<details><summary>Manage costs for Azure AI services</summary>
  
 </details>
 
--> Monitor an Azure AI resource
-<details><summary></summary>
+
+<details><summary>Monitor an Azure AI resource</summary>
  
 </details>
 
-## Deploy Azure AI services
--> Determine a default endpoint for a service
-<details><summary></summary>
+## Deploy Azure AI services ##
+
+<details><summary>Determine a default endpoint for a service</summary>
  
 </details>
 
--> Create a resource by using the Azure portal
-<details><summary></summary>
+
+<details><summary>Create a resource by using the Azure portal</summary>
  
 </details>
 
--> Integrate Azure AI services into a continuous integration/continuous deployment (CI/CD) pipeline
-<details><summary></summary>
+
+<details><summary>Integrate Azure AI services into a continuous integration/continuous deployment (CI/CD) pipeline</summary>
  
 </details>
 
--> Plan a container deployment
-<details><summary></summary>
+<details><summary>Plan a container deployment</summary>
  
 </details>
 
--> Implement prebuilt containers in a connected environment
-<details><summary></summary>
+
+<details><summary>Implement prebuilt containers in a connected environment</summary>
  
 </details>
 
-## Create solutions to detect anomalies and improve content
--> Create a solution that uses Anomaly Detector, part of Cognitive Services
-<details><summary></summary>
+## Create solutions to detect anomalies and improve content ##
+
+<details><summary>Create a solution that uses Anomaly Detector, part of Cognitive Services</summary>
  
 </details>
 
--> Create a solution that uses Azure Content Moderator
-<details><summary></summary>
+
+<details><summary>Create a solution that uses Azure Content Moderator</summary>
  
 </details>
 
--> Create a solution that uses Personalizer, part of Cognitive Services
-<details><summary></summary>
+
+<details><summary>Create a solution that uses Personalizer, part of Cognitive Services</summary>
  
 </details>
 
--> Create a solution that uses Azure Metrics Advisor, part of Azure Applied AI Services
-<details><summary></summary>
+
+<details><summary>Create a solution that uses Azure Metrics Advisor, part of Azure Applied AI Services</summary>
  
 </details>
 
--> Create a solution that uses Azure Immersive Reader, part of Azure Applied AI Services
-<details><summary></summary>
+
+<details><summary>Create a solution that uses Azure Immersive Reader, part of Azure Applied AI Services</summary>
  
 </details>
 
