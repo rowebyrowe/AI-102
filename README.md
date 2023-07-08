@@ -10,7 +10,7 @@ https://learn.microsoft.com/en-us/training/paths/prepare-for-ai-engineering/    
 
  ## Select the appropriate Azure AI service
 
-<details><summary>-> Select the appropriate service for a vision solution</summary>
+<details><summary>Select the appropriate service for a vision solution</summary>
  
 **Vision**
 1. Image analysis	
@@ -22,8 +22,8 @@ https://learn.microsoft.com/en-us/training/paths/prepare-for-ai-engineering/    
 
 </details>
 
--> Select the appropriate service for a language analysis solution
-<details><summary></summary>
+
+<details><summary>Select the appropriate service for a language analysis solution</summary>
  
 **Language**
 1. Text analysis	
@@ -33,8 +33,8 @@ https://learn.microsoft.com/en-us/training/paths/prepare-for-ai-engineering/    
  
 </details>
 
--> Select the appropriate service for a decision-support solution
-<details><summary></summary>
+
+<details><summary>Select the appropriate service for a decision-support solution</summary>
  
 **Decision**
 1. Anomaly detection
@@ -43,8 +43,8 @@ https://learn.microsoft.com/en-us/training/paths/prepare-for-ai-engineering/    
  
 </details>
 
--> Select the appropriate service in Cognitive Services for a speech solution
-<details><summary></summary>
+
+<details><summary>Select the appropriate service in Cognitive Services for a speech solution</summary>
  
 **Speech**
 1. Speech to Text	
@@ -54,8 +54,8 @@ https://learn.microsoft.com/en-us/training/paths/prepare-for-ai-engineering/    
 
 </details>
 
--> Select the appropriate Applied AI services
-<details><summary></summary>
+
+<details><summary>Select the appropriate Applied AI services</summary>
 ## Applied AI Services
 
 You can use Cognitive Services to build your own AI solutions, and they also underpin Azure Applied AI Services that provide out-of-the-box solutions for common AI scenarios. Applied AI Services include:
