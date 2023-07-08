@@ -10,14 +10,29 @@ https://learn.microsoft.com/en-us/training/paths/prepare-for-ai-engineering/    
 
  ## Select the appropriate Azure AI service
 -> Select the appropriate service for a vision solution
+<details>
+ 
+</details>
 
 -> Select the appropriate service for a language analysis solution
+<details>
+ 
+</details>
 
--> Select the appropriate service for a decision support solution
+-> Select the appropriate service for a decision-support solution
+<details>
+ 
+</details>
 
 -> Select the appropriate service in Cognitive Services for a speech solution
+<details>
+ 
+</details>
 
 -> Select the appropriate Applied AI services
+<details>
+ 
+</details>
 
 ## Plan and configure security for Azure AI services
 -> Manage account keys
