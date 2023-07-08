@@ -10,70 +10,125 @@ https://learn.microsoft.com/en-us/training/paths/prepare-for-ai-engineering/    
 
  ## Select the appropriate Azure AI service
 -> Select the appropriate service for a vision solution
-<details>
+<details><summary></summary>
  
 </details>
 
 -> Select the appropriate service for a language analysis solution
-<details>
+<details><summary></summary>
  
 </details>
 
 -> Select the appropriate service for a decision-support solution
-<details>
+<details><summary></summary>
  
 </details>
 
 -> Select the appropriate service in Cognitive Services for a speech solution
-<details>
+<details><summary></summary>
  
 </details>
 
 -> Select the appropriate Applied AI services
-<details>
+<details><summary></summary>
  
 </details>
 
 ## Plan and configure security for Azure AI services
 -> Manage account keys
+<details><summary></summary>
+ 
+</details>
 
 -> Manage authentication for a resource
+<details><summary></summary>
+ 
+</details>
 
 -> Secure services by using Azure Virtual Networks
+<details><summary></summary>
+ 
+</details>
 
 -> Plan for a solution that meets Responsible AI principles
+<details><summary></summary>
+ 
+</details>
 
 ## Create and manage an Azure AI service
 -> Create an Azure AI resource
+<details><summary></summary>
+ 
+</details>
 
 -> Configure diagnostic logging
+<details><summary></summary>
+ 
+</details>
 
 -> Manage costs for Azure AI services
+<details><summary></summary>
+ 
+</details>
 
 -> Monitor an Azure AI resource
+<details><summary></summary>
+ 
+</details>
 
 ## Deploy Azure AI services
 -> Determine a default endpoint for a service
+<details><summary></summary>
+ 
+</details>
 
 -> Create a resource by using the Azure portal
+<details><summary></summary>
+ 
+</details>
 
 -> Integrate Azure AI services into a continuous integration/continuous deployment (CI/CD) pipeline
+<details><summary></summary>
+ 
+</details>
 
 -> Plan a container deployment
+<details><summary></summary>
+ 
+</details>
 
 -> Implement prebuilt containers in a connected environment
+<details><summary></summary>
+ 
+</details>
 
 ## Create solutions to detect anomalies and improve content
 -> Create a solution that uses Anomaly Detector, part of Cognitive Services
+<details><summary></summary>
+ 
+</details>
 
 -> Create a solution that uses Azure Content Moderator
+<details><summary></summary>
+ 
+</details>
 
 -> Create a solution that uses Personalizer, part of Cognitive Services
+<details><summary></summary>
+ 
+</details>
 
 -> Create a solution that uses Azure Metrics Advisor, part of Azure Applied AI Services
+<details><summary></summary>
+ 
+</details>
 
 -> Create a solution that uses Azure Immersive Reader, part of Azure Applied AI Services
+<details><summary></summary>
+ 
+</details>
 
+****************************************************************************
 | Feature           | Capability                                                                |
 | ----------------- | ------------------------------------------------------------------ |
 | Automated machine learning	 | This feature enables non-experts to quickly create an effective machine learning model from data.  |
