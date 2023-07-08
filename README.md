@@ -9,8 +9,8 @@ Python - https://learn.microsoft.com/en-us/python/api/overview/azure/cognitive-s
 https://learn.microsoft.com/en-us/training/paths/prepare-for-ai-engineering/                                                                             https://learn.microsoft.com/en-us/training/paths/provision-manage-azure-cognitive-services/  
 
  ## Select the appropriate Azure AI service
--> Select the appropriate service for a vision solution
-<details><summary></summary>
+
+<details><summary>-> Select the appropriate service for a vision solution</summary>
  
 **Vision**
 1. Image analysis	
