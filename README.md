@@ -12,25 +12,65 @@ https://learn.microsoft.com/en-us/training/paths/prepare-for-ai-engineering/    
 -> Select the appropriate service for a vision solution
 <details><summary></summary>
  
+**Vision**
+1. Image analysis	
+2. Video analysis	
+3. Image classification	
+4. Object detection	
+5. Facial analysis	
+6. Optical character recognition
+
 </details>
 
 -> Select the appropriate service for a language analysis solution
 <details><summary></summary>
+ 
+**Language**
+1. Text analysis	
+2. Question Answering	
+3. Language understanding
+4. Translation
  
 </details>
 
 -> Select the appropriate service for a decision-support solution
 <details><summary></summary>
  
+**Decision**
+1. Anomaly detection
+2. Content moderation
+3. Content personalization
+ 
 </details>
 
 -> Select the appropriate service in Cognitive Services for a speech solution
 <details><summary></summary>
  
+**Speech**
+1. Speech to Text	
+2. Text to Speech	
+3. Speech Translation	
+4. Speaker Recognition
+
 </details>
 
 -> Select the appropriate Applied AI services
 <details><summary></summary>
+## Applied AI Services
+
+You can use Cognitive Services to build your own AI solutions, and they also underpin Azure Applied AI Services that provide out-of-the-box solutions for common AI scenarios. Applied AI Services include:
+
+**Azure Form Recognizer** - an optical character recognition (OCR) solution that can extract semantic meaning from forms, such as invoices, receipts, and others.
+
+**Azure Metrics Advisor** - A service build on the Anomaly Detector cognitive service that simplifies real-time monitoring and response to critical metrics.
+
+**Azure Video Analyzer** for Media - A comprehensive video analysts solution build on the Video Indexer cognitive service.
+
+**Azure Immersive Reader** - A reading solution that supports people of all ages and abilities.
+
+**Azure Bot Service** - A cloud service for delivering conversational AI solutions, or bots.
+
+**Azure Cognitive Search** - A cloud-scale search solution that uses cognitive services to extract insights from data and documents.
  
 </details>
 
@@ -140,7 +180,7 @@ https://learn.microsoft.com/en-us/training/paths/prepare-for-ai-engineering/    
 
 **Language**
 1. Text analysis	
-2. Question answering	
+2. Question Answering	
 3. Language understanding
 4. Translation
 
