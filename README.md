@@ -256,6 +256,7 @@ By sending new data points as you generate them, you can monitor your data in re
 
 
 <details><summary>Create a solution that uses Azure Content Moderator</summary>
+ 
  # Azure Content Moderator?
 
 Azure Content Moderator is an AI service that lets you handle content that is potentially offensive, risky, or otherwise undesirable. It includes the AI-powered content moderation service which scans text, image, and videos and applies content flags automatically.
@@ -270,7 +271,8 @@ https://learn.microsoft.com/en-us/azure/cognitive-services/content-moderator/cli
 
 
 <details><summary>Create a solution that uses Personalizer, part of Cognitive Services</summary>
- 
+
+ # Azure Personalizer?
 https://learn.microsoft.com/en-us/azure/cognitive-services/personalizer/what-is-personalizer 
 
 Azure Personalizer is an AI service that your applications make smarter decisions at scale using reinforcement learning. Personalizer processes information about the state of your application, scenario, and/or users (contexts), and a set of possible decisions and related attributes (actions) to determine the best decision to make.
@@ -292,6 +294,7 @@ https://learn.microsoft.com/en-us/rest/api/personalizer/
 
 
 <details><summary>Create a solution that uses Azure Metrics Advisor, part of Azure Applied AI Services</summary>
+ 
  ## Azure Metrics Advisor?
 https://learn.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/overview
 
@@ -310,6 +313,7 @@ Use Metrics Advisor to:
 
 
 <details><summary>Create a solution that uses Azure Immersive Reader, part of Azure Applied AI Services</summary>
+ 
  ## Azure Immersive Reader?
 
 https://learn.microsoft.com/en-us/azure/applied-ai-services/immersive-reader/overview 
@@ -572,53 +576,76 @@ https://learn.microsoft.com/en-us/training/paths/extract-text-from-images-docume
        
 ## Analyze images
 
--> Select appropriate visual features to meet image processing requirements
-
--> Create an image processing request to include appropriate image analysis features
-
--> Interpret image processing responses
+<details><summary>Select appropriate visual features to meet image processing requirements</summary>
+ 
+</details>
+<details><summary>Create an image processing request to include appropriate image analysis features</summary> 
+ 
+</details>
+<details><summary>Interpret image processing responses</summary> 
+ 
+</details>
 
 ## Extract text from images
 
--> Extract text from images or PDFs by using the Computer Vision service
-
--> Convert handwritten text by using the Computer Vision service
-
--> Extract information using prebuilt models in Azure Form Recognizer
-
--> Build and optimize a custom model for Form Recognizer
+<details><summary>Extract text from images or PDFs by using the Computer Vision service</summary> 
+ 
+</details>
+<details><summary>Convert handwritten text by using the Computer Vision service</summary> 
+ 
+</details>
+<details><summary>Extract information using prebuilt models in Azure Form Recognizer</summary> 
+ 
+</details>
+<details><summary>Build and optimize a custom model for Form Recognizer</summary> 
+ 
+</details>
 
 ## Implement image classification and object detection by using the Custom Vision service, part of Azure Cognitive Services
 
--> Choose between image classification and object detection models
-
--> Specify model configuration options, including category, version, and compact
-
--> Label images
-
--> Train custom image models, including classifiers and detectors
-
--> Manage training iterations
-
--> Evaluate model metrics
-
--> Publish a trained iteration of a model
-
--> Export a model to run on a specific target
-
--> Implement a Custom Vision model as a Docker container
-
--> Interpret model responses
-
+<details><summary>Choose between image classification and object detection models</summary> 
+ 
+</details>
+<details><summary>Specify model configuration options, including category, version, and compact</summary> 
+ 
+</details>
+<details><summary>Label images</summary> 
+ 
+</details>
+<details><summary>Train custom image models, including classifiers and detectors</summary> 
+ 
+</details>
+<details><summary>Manage training iterations</summary> 
+ 
+</details>
+<details><summary>Evaluate model metrics</summary> 
+ 
+</details>
+<details><summary>Publish a trained iteration of a model</summary> 
+ 
+</details>
+<details><summary>Export a model to run on a specific target</summary> 
+ 
+</details>
+<details><summary>Implement a Custom Vision model as a Docker container</summary> 
+ 
+</details>
+<details><summary>Interpret model responses</summary> 
+ 
+</details>
 ## Process videos
--> Process a video by using Azure Video Indexer
-
--> Extract insights from a video or live stream by using Azure Video Indexer
-
--> Implement content moderation by using Azure Video Indexer
-
--> Integrate a custom language model into Azure Video Indexer
-
+<details><summary>Process a video by using Azure Video Indexer</summary> 
+ 
+</details>
+<details><summary>Extract insights from a video or live stream by using Azure Video Indexer</summary> 
+ 
+</details>
+<details><summary>Implement content moderation by using Azure Video Indexer</summary> 
+ 
+</details>
+<details><summary>Integrate a custom language model into Azure Video Indexer</summary> 
+ 
+</details>
 
 # Computer Vision resource
 
