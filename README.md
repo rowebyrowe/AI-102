@@ -44,7 +44,7 @@ https://learn.microsoft.com/en-us/training/paths/prepare-for-ai-engineering/    
 </details>
 
 
-<details><summary>Select the appropriate service in Cognitive Services for a speech solution</summary>
+<details><summary>Select the appropriate service for a speech solution</summary>
  
 
 1. Speech to Text	
@@ -120,7 +120,8 @@ Regenerate key 2.
 
 
 <details><summary>Manage costs for Azure AI services</summary>
- 
+ ## Monitor Cognitive Services costs
+To use the pricing calculator to estimate Cognitive Services costs, create a new estimate and select Azure Cognitive Services in the AI + Machine Learning category.
 </details>
 
 
@@ -270,7 +271,7 @@ https://learn.microsoft.com/en-us/azure/cognitive-services/content-moderator/cli
 </details>
 
 
-<details><summary>Create a solution that uses Personalizer, part of Cognitive Services</summary>
+<details><summary>Create a solution that uses Personalizer</summary>
 
  # Azure Personalizer?
 https://learn.microsoft.com/en-us/azure/cognitive-services/personalizer/what-is-personalizer 
@@ -293,7 +294,7 @@ https://learn.microsoft.com/en-us/rest/api/personalizer/
 </details>
 
 
-<details><summary>Create a solution that uses Azure Metrics Advisor, part of Azure Applied AI Services</summary>
+<details><summary>Create a solution that uses Azure Metrics Advisor</summary>
  
  ## Azure Metrics Advisor?
 https://learn.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/overview
@@ -330,239 +331,7 @@ Immersive Reader is part of Azure Applied AI Services, and is an inclusively des
 | Data and compute management | Cloud-based data storage and compute resources that professional data scientists can use to run data experiment code at scale. 
 | Pipelines	 | Data scientists, software engineers, and IT operations professionals can define pipelines to orchestrate model training, deployment, and management tasks.
 
-## Capabilities of Azure Cognitive Services
-
-**Language**
-1. Text analysis	
-2. Question Answering	
-3. Language understanding
-4. Translation
-
-**Speech**
-1. Speech to Text	
-2. Text to Speech	
-3. Speech Translation	
-4. Speaker Recognition	
-
-**Vision**
-1. Image analysis	
-2. Video analysis	
-3. Image classification	
-4. Object detection	
-5. Facial analysis	
-6. Optical character recognition
-
-**Decision**
-1. Anomaly detection
-2. Content moderation
-3. Content personalization
-
-## Applied AI Services
-
-You can use Cognitive Services to build your own AI solutions, and they also underpin Azure Applied AI Services that provide out-of-the-box solutions for common AI scenarios. Applied AI Services include:
-
-**Azure Form Recognizer** - an optical character recognition (OCR) solution that can extract semantic meaning from forms, such as invoices, receipts, and others.
-
-**Azure Metrics Advisor** - A service build on the Anomaly Detector cognitive service that simplifies real-time monitoring and response to critical metrics.
-
-**Azure Video Analyzer** for Media - A comprehensive video analysts solution build on the Video Indexer cognitive service.
-
-**Azure Immersive Reader** - A reading solution that supports people of all ages and abilities.
-
-**Azure Bot Service** - A cloud service for delivering conversational AI solutions, or bots.
-
-**Azure Cognitive Search** - A cloud-scale search solution that uses cognitive services to extract insights from data and documents.
-
 **------------------------------------------------------------------------------------------------------------------**
-
-## Secure Cognitive Services
-
-**Regenerate keys** 
-You should regenerate keys regularly to protect against the risk of keys being shared with or accessed by unauthorized users. You can regenerate keys by using the visual interface in the Azure portal, or by using the az cognitiveservices account keys regenerate Azure command-line interface (CLI) command.
-
-Each cognitive service is provided with two keys, enabling you to regenerate keys without service interruption. To accomplish this:
-
-Configure all production applications to use key 2.
-Regenerate key 1
-Switch all production applications to use the newly regenerated key 1.
-Regenerate key 2.
-
-**------------------------------------------------------------------------------------------------------------------**
-
-## Monitor Cognitive Services costs
-To use the pricing calculator to estimate Cognitive Services costs, create a new estimate and select Azure Cognitive Services in the AI + Machine Learning category.
-
-## Manage diagnostic logging
-
-Diagnostic logging enables you to capture rich operational data for a Cognitive Services resource, which can be used to analyze service usage and troubleshoot problems.
-
-**Azure Log Analytics** - a service that enables you to query and visualize log data within the Azure portal.
-
-**Azure Storage** - a cloud-based data store that you can use to store log archives (which can be exported for analysis in other tools as needed).
-
-**------------------------------------------------------------------------------------------------------------------**
-## Deploy cognitive services in containers
-
-Containers enable you to host Azure Cognitive Services either on-premises or on Azure. For example, if your application uses sensitive data in an on-premises SQL Server to call a cognitive service, you can deploy Cognitive Services in containers on the same network.
-
-What is a container?
-
-A container comprises an application or service and the runtime components needed to run it, while abstracting the underlying operating system and hardware. In practice, this abstraction results in two significant benefits:
-
-1. Containers are portable across hosts, which may be running different operating systems or use different hardware - making it easier to move an application and all its dependencies.
-
-2. A single container host can support multiple isolated containers, each with its own specific runtime configuration - making it easier to consolidate multiple applications that have different configuration requirement.
-
-A container is encapsulated in a container image that defines the software and configuration it must support. Images can be stored in a central registry, such as Docker Hub, or you can maintain a set of images in your own registry.
-
-## Container deployment
-
-1. A Docker* server.
-2. An Azure Container Instance (ACI).
-3. An Azure Kubernetes Service (AKS) cluster.
-
-## Use Cognitive Services containers
-
-To deploy and use a Cognitive Services container, the following three activities must occur:
-
-1. The container image for the specific Cognitive Services API you want to use is downloaded and deployed to a container host, such as a local Docker server, an Azure Container Instance (ACI), or Azure Kubernetes Service (AKS).
-
-2. Client applications submit data to the endpoint provided by the containerized service, and retrieve results just as they would from a Cognitive Services cloud resource in Azure.
-
-3. Periodically, usage metrics for the containerized service are sent to a Cognitive Services resource in Azure in order to calculate billing for the service.
-
-![App Screenshot](https://learn.microsoft.com/en-us/training/wwl-data-ai/investigate-container-for-use-cognitive-services/media/cognitive-services-container.png)
-
-| Feature             | Image                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Key Phrase Extraction		 | This feature enables non-experts to quickly create an effective machine learning model from data.|
-| Language Detection	 | mcr.microsoft.com/azure-cognitive-services/language|
-| Sentiment Analysis v3 (English)	 | mcr.microsoft.com/azure-cognitive-services/sentiment:3.0-en
-
-
-## Cognitive Services container configuration
-
-When you deploy a Cognitive Services container image to a host, you must specify three settings.
-
-| Setting             | Description                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| ApiKey		 | Key from your deployed Azure Cognitive Service; used for billing.|
-| Billing	 | Endpoint URI from your deployed Azure Cognitive Service; used for billing.|
-| Eula	 | Value of accept to state you accept the license for the container.
-
-
-https://microsoftlearning.github.io/AI-102-AIEngineer/Instructions/04-use-a-container.html
-
-Note: In this exercise, you’ve deployed the cognitive services container image for text translation to an Azure Container Instances (ACI) resource. You can use a similar approach to deploy it to a Docker host on your own computer or network by running the following command (on a single line) to deploy the language detection container to your local Docker instance, replacing <yourEndpoint> and <yourKey> with your endpoint URI and either of the keys for your cognitive services resource.
-```bash
-docker run --rm -it -p 5000:5000 --memory 4g --cpus 1 mcr.microsoft.com/azure-cognitive-services/textanalytics/language Eula=accept Billing=<yourEndpoint> ApiKey=<yourKey> 
-```
-**------------------------------------------------------------------------------------------------------------------**
-
-## What is Anomaly Detector?
-Anomaly Detector is an AI service with a set of APIs, which enables you to monitor and detect anomalies in your time series data with little machine learning (ML) knowledge, either batch validation or real-time inference.
-
-https://learn.microsoft.com/en-us/azure/cognitive-services/anomaly-detector/overview 
-
-| Feature             | Description                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Univariate Anomaly Detection		 | This feature enables non-experts to quickly create an effective machine learning model from data.|
-| Multivariate Anomaly Detection		| Detect anomalies in multiple variables with correlations, which are usually gathered from equipment or other complex system. The underlying model used is a Graph Attention Network.
-
-## Univariate Anomaly Detection
-
-Enables you to monitor and detect abnormalities in your time series data without having to know machine learning. The algorithms adapt by automatically identifying and applying the best-fitting models to your data, regardless of industry, scenario, or data volume.
-
-| Feature	             | Description                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Streaming detection			 | Detect anomalies in your streaming data by using previously seen data points to determine if your latest one is an anomaly. This operation generates a model using the data points you send, and determines if the target point is an anomaly. By calling the API with each new data point you generate, you can monitor your data as it's created.|
-| Batch detection		 | Use your time series to detect any anomalies that might exist throughout your data. This operation generates a model using your entire time series data, with each point analyzed with the same model.|
-| Change points detection		 | Use your time series to detect any trend change points that exist in your data. This operation generates a model using your entire time series data, with each point analyzed with the same model.
-
-
-## Multivariate Anomaly Detection
-The Multivariate Anomaly Detection APIs further enable developers by easily integrating advanced AI for detecting anomalies from groups of metrics, without the need for machine learning knowledge or labeled data. Dependencies and inter-correlations between up to 300 different signals are now automatically counted as key factors.
-
-
-# Anomaly detection modes
-
-https://learn.microsoft.com/en-us/azure/cognitive-services/anomaly-detector/quickstarts/client-libraries?tabs=command-line&pivots=rest-api 
-
-
-The following request URLs must be combined with the appropriate endpoint for your subscription. For example: 
-
-https://<your-custom-subdomain>.api.cognitive.microsoft.com/anomalydetector/v1.0/timeseries/entire/detect
-
-1. Batch detection
-
-To detect anomalies throughout a batch of data points over a given time range, use the following request URI with your time series data:
-
-/timeseries/entire/detect.
-
-2. Streaming detection
-
-To continuously detect anomalies on streaming data, use the following request URI with your latest data point:
-
-/timeseries/last/detect.
-
-By sending new data points as you generate them, you can monitor your data in real time. A model will be generated with the data points you send, and the API will determine if the latest point in the time series is an anomaly.
- 
- **------------------------------------------------------------------------------------------------------------------**
-# Azure Content Moderator?
-
-Azure Content Moderator is an AI service that lets you handle content that is potentially offensive, risky, or otherwise undesirable. It includes the AI-powered content moderation service which scans text, image, and videos and applies content flags automatically.
-
-![App Screenshot](
-https://learn.microsoft.com/en-us/azure/cognitive-services/content-moderator/images/content-moderator-mod-api.png)
-
-
-https://learn.microsoft.com/en-us/azure/cognitive-services/content-moderator/client-libraries?tabs=visual-studio&pivots=programming-language-rest-api
- 
- 
- **------------------------------------------------------------------------------------------------------------------**
-
-# Personalizer?
-
-https://learn.microsoft.com/en-us/azure/cognitive-services/personalizer/what-is-personalizer 
-
-Azure Personalizer is an AI service that your applications make smarter decisions at scale using reinforcement learning. Personalizer processes information about the state of your application, scenario, and/or users (contexts), and a set of possible decisions and related attributes (actions) to determine the best decision to make.
-
-Personalizer can determine the best actions to take in a variety of scenarios:
-
-- E-commerce: What product should be shown to customers to maximize the likelihood of a purchase?
-- Content recommendation: What article should be shown to increase the click-through rate?
-- Content design: Where should an advertisement be placed to optimize user engagement on a website?
-- Communication: When and how should a notification be sent to maximize the chance of a response?
-
-
-https://learn.microsoft.com/en-us/azure/cognitive-services/personalizer/quickstart-personalizer-sdk?pivots=programming-language-python 
-
-## REST API reference 
-https://learn.microsoft.com/en-us/rest/api/personalizer/
- 
- **------------------------------------------------------------------------------------------------------------------**
-
-## Azure Metrics Advisor?
-https://learn.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/overview
-
-Metrics Advisor is a part of Azure Applied AI Services that uses AI to perform data monitoring and anomaly detection in time series data. The service automates the process of applying models to your data, and provides a set of APIs and a web-based workspace for data ingestion, anomaly detection, and diagnostics - without needing to know machine learning.
-
-Use Metrics Advisor to:
-
-- Analyze multi-dimensional data from multiple data sources
-- Identify and correlate anomalies
-- Configure and fine-tune the anomaly detection model used on your data
-- Diagnose anomalies and help with root cause analysis
-
-![App Screenshot](https://learn.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics-advisor-overview.png)
- **------------------------------------------------------------------------------------------------------------------**
- 
-## Azure Immersive Reader?
-
-https://learn.microsoft.com/en-us/azure/applied-ai-services/immersive-reader/overview 
-
-Immersive Reader is part of Azure Applied AI Services, and is an inclusively designed tool that implements proven techniques to improve reading comprehension for new readers, language learners, and people with learning differences such as dyslexia.
-
 
 ######################################################################################## 
 </details>
