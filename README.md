@@ -332,8 +332,6 @@ Immersive Reader is part of Azure Applied AI Services, and is an inclusively des
 | Pipelines	 | Data scientists, software engineers, and IT operations professionals can define pipelines to orchestrate model training, deployment, and management tasks.
 
 **------------------------------------------------------------------------------------------------------------------**
-
-######################################################################################## 
 </details>
 
 # 2. Implement image and video processing solutions 	(15–20%)	
