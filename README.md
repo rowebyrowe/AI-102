@@ -1539,77 +1539,145 @@ https://learn.microsoft.com/en-us/rest/api/formrecognizer/2.0/get-analyze-form-r
  https://learn.microsoft.com/en-us/training/paths/process-translate-text-azure-cognitive-services/ 
  
 ## Analyze text
--> Retrieve and process key phrases
+<details><summary>Retrieve and process key phrases</summary>
+ 
+</details>
 
--> Retrieve and process entities
+<details><summary>Retrieve and process entities</summary>
+ 
+</details>
 
--> Retrieve and process sentiment
+<details><summary>Retrieve and process sentiment</summary>
+ 
+</details>
 
--> Detect the language used in text
+<details><summary>Detect the language used in text</summary>
+ 
+</details>
 
--> Detect personally identifiable information (PII)
+<details><summary> Detect personally identifiable information (PII)</summary>
+ 
+</details>
 
  ## Process speech
--> Implement and customize text-to-speech
+<details><summary>Implement and customize text-to-speech</summary>
+ 
+</details>
 
--> Implement and customize speech-to-text
+<details><summary>Implement and customize speech-to-text</summary>
+ 
+</details>
 
--> Improve text-to-speech by using SSML and Custom Neural Voice
+<details><summary>Improve text-to-speech by using SSML and Custom Neural Voice</summary>
+ 
+</details>
 
--> Improve speech-to-text by using phrase lists and Custom Speech
+<details><summary>Improve speech-to-text by using phrase lists and Custom Speech</summary>
+ 
+</details>
 
--> Implement intent recognition
+<details><summary>Implement intent recognition</summary>
+ 
+</details>
 
--> Implement keyword recognition
+<details><summary>Implement keyword recognition</summary>
+ 
+</details>
 
  ## Translate language
--> Translate text and documents by using the Translator service
+<details><summary>Translate text and documents by using the Translator service</summary>
+ 
+</details>
 
--> Implement custom translation, including training, improving, and publishing a custom model
+<details><summary>Implement custom translation, including training, improving, and publishing a custom model</summary>
+ 
+</details>
 
--> Translate speech-to-speech by using the Speech service
+<details><summary>Translate speech-to-speech by using the Speech service</summary>
+ 
+</details>
 
--> Translate speech-to-text by using the Speech service
+<details><summary>Translate speech-to-text by using the Speech service</summary>
+ 
+</details>
 
--> Translate to multiple languages simultaneously
+<details><summary>Translate to multiple languages simultaneously</summary>
+ 
+</details>
 
  ## Build and manage a language understanding model
--> Create intents and add utterances
+<details><summary>Create intents and add utterances</summary>
+ 
+</details>
 
--> Create entities
+<details><summary>Create entities</summary>
+ 
+</details>
 
--> Train evaluate, deploy, and test a language understanding model
+<details><summary>Train evaluate, deploy, and test a language understanding model</summary>
+ 
+</details>
 
--> Optimize a Language Understanding (LUIS) model
+<details><summary>Optimize a Language Understanding (LUIS) model</summary>
+ 
+</details>
 
--> Integrate multiple language service models by using Orchestrator
+<details><summary>Integrate multiple language service models by using Orchestrator</summary>
+ 
+</details>
 
--> Import and export language understanding models
+<details><summary>Import and export language understanding models</summary>
+ 
+</details>
 
  ## Create a question answering solution
--> Create a question answering project
+<details><summary>Create a question answering project</summary>
+ 
+</details>
 
--> Add question-and-answer pairs manually
+<details><summary>Add question-and-answer pairs manually</summary>
+ 
+</details>
 
--> Import sources
+<details><summary>Import sources</summary>
+ 
+</details>
 
--> Train and test a knowledge base
+<details><summary>Train and test a knowledge base</summary>
+ 
+</details>
 
--> Publish a knowledge base
+<details><summary>Publish a knowledge base</summary>
+ 
+</details>
 
--> Create a multi-turn conversation
+<details><summary>Create a multi-turn conversation</summary>
+ 
+</details>
 
--> Add alternate phrasing
+<details><summary>Add alternate phrasing</summary>
+ 
+</details>
 
--> Add chit-chat to a knowledge base
+<details><summary>Add chit-chat to a knowledge base</summary>
+ 
+</details>
 
--> Export a knowledge base
+<details><summary>Export a knowledge base</summary>
+ 
+</details>
 
--> Create a multi-language question answering solution
+<details><summary>Create a multi-language question answering solution</summary>
+ 
+</details>
 
--> Create a multi-domain question answering solution
+<details><summary>Create a multi-domain question answering solution</summary>
+ 
+</details>
 
--> Use metadata for question-and-answer pairs
+<details><summary>Use metadata for question-and-answer pairs</summary>
+ 
+</details>
  
  ## Extract insights from text with the Language service
 
@@ -2772,26 +2840,26 @@ If precision is high but recall is low, it means that the model doesn't always r
        
 
 ## Implement a Cognitive Search solution
--> Provision a Cognitive Search resource
+<details><summary>Provision a Cognitive Search resource
 
--> Create data sources
+<details><summary>Create data sources
 
--> Define an index
+<details><summary>Define an index
 
--> Create and run an indexer
+<details><summary>Create and run an indexer
 
--> Query an index, including syntax, sorting, filtering, and wildcards
+<details><summary>Query an index, including syntax, sorting, filtering, and wildcards
 
--> Manage knowledge store projections, including file, object, and table projections
+<details><summary>Manage knowledge store projections, including file, object, and table projections
 
 ## Apply AI enrichment skills to an indexer pipeline
--> Attach a Cognitive Services account to a skillset
+<details><summary>Attach a Cognitive Services account to a skillset
 
--> Select and include built-in skills for documents
+<details><summary>Select and include built-in skills for documents
 
--> Implement custom skills and include them in a skillset
+<details><summary>Implement custom skills and include them in a skillset
 
--> Implement incremental enrichment
+<details><summary>Implement incremental enrichment
 
 **------------------------------------------------------------------------------------------------------------------**
 
@@ -2983,39 +3051,69 @@ https://learn.microsoft.com/en-us/training/paths/create-conversational-ai-soluti
        
 
 ## Design and implement conversation flow
--> Design conversational logic for a bot
+<details><summary>Design conversational logic for a bot</summary>
+ 
+</details>
 
--> Choose appropriate activity handlers, dialogs or topics, triggers, and state handling for a bot
+<details><summary>Choose appropriate activity handlers, dialogs or topics, triggers, and state handling for a bot</summary>
+ 
+</details>
 
 ## Build a conversational bot
 
--> Create a bot from a template
+<details><summary>Create a bot from a template</summary>
+ 
+</details>
 
--> Create a bot from scratch
+<details><summary>Create a bot from scratch</summary>
+ 
+</details>
 
--> Implement activity handlers, dialogs or topics, and triggers
+<details><summary>Implement activity handlers, dialogs or topics, and triggers</summary>
+ 
+</details>
 
--> Implement channel-specific logic
+<details><summary>Implement channel-specific logic</summary>
+ 
+</details>
 
--> Implement Adaptive Cards
+<details><summary>Implement Adaptive Cards</summary>
+ 
+</details>
 
--> Implement multi-language support in a bot
+<details><summary>Implement multi-language support in a bot</summary>
+ 
+</details>
 
--> Implement multi-step conversations
+<details><summary>Implement multi-step conversations</summary>
+ 
+</details>
 
--> Manage state for a bot
+<details><summary>Manage state for a bot</summary>
+ 
+</details>
 
--> Integrate Cognitive Services into a bot, including question answering, LUIS, and Speech service
+<details><summary>Integrate Cognitive Services into a bot, including question answering, LUIS, and Speech service</summary>
+ 
+</details>
 
 ## Test, publish, and maintain a conversational bot
 
--> Test a bot using the Bot Framework Emulator or the Power Virtual Agents web app
+<details><summary>Test a bot using the Bot Framework Emulator or the Power Virtual Agents web app</summary>
+ 
+</details>
 
--> Test a bot in a channel-specific environment
+<details><summary>Test a bot in a channel-specific environment</summary>
+ 
+</details>
 
--> Troubleshoot a conversational bot
-
--> Deploy bot logic       
+<details><summary>Troubleshoot a conversational bot</summary>
+ 
+</details>
+<details><summary>Deploy bot logic</summary>
+ 
+</details>
+ 
 
 **Create conversational AI solutions** 
 
