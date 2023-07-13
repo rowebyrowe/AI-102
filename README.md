@@ -2840,26 +2840,46 @@ If precision is high but recall is low, it means that the model doesn't always r
        
 
 ## Implement a Cognitive Search solution
-<details><summary>Provision a Cognitive Search resource
+<details><summary>Provision a Cognitive Search resource</summary>
 
-<details><summary>Create data sources
+</details>
 
-<details><summary>Define an index
+<details><summary>Create data sources</summary>
 
-<details><summary>Create and run an indexer
+</details>
 
-<details><summary>Query an index, including syntax, sorting, filtering, and wildcards
+<details><summary>Define an index</summary>
 
-<details><summary>Manage knowledge store projections, including file, object, and table projections
+</details>
+
+<details><summary>Create and run an indexer</summary>
+
+</details>
+
+<details><summary>Query an index, including syntax, sorting, filtering, and wildcards</summary>
+
+</details>
+
+<details><summary>Manage knowledge store projections, including file, object, and table projections</summary>
+
+</details>
 
 ## Apply AI enrichment skills to an indexer pipeline
-<details><summary>Attach a Cognitive Services account to a skillset
+<details><summary>Attach a Cognitive Services account to a skillset</summary>
 
-<details><summary>Select and include built-in skills for documents
+</details>
 
-<details><summary>Implement custom skills and include them in a skillset
+<details><summary>Select and include built-in skills for documents</summary>
 
-<details><summary>Implement incremental enrichment
+</details>
+
+<details><summary>Implement custom skills and include them in a skillset</summary>
+
+</details>
+
+<details><summary>Implement incremental enrichment</summary>
+
+</details>
 
 **------------------------------------------------------------------------------------------------------------------**
 
@@ -3044,7 +3064,7 @@ Azure Cognitive Search lets you query an index using a REST endpoint or inside t
 ######################################################################################## 
 </details>
 
-# 5.  Implement conversational AI solutions 	(15–20%)	
+# 5. Implement conversational AI solutions 	(15–20%)	
 
 <details><summary></summary>
 https://learn.microsoft.com/en-us/training/paths/create-conversational-ai-solutions/ 
