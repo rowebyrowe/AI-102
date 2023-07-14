@@ -85,16 +85,36 @@ Regenerate key 1
 Switch all production applications to use the newly regenerated key 1.
 Regenerate key 2.
 
+**Protect keys with Azure Key Vault**
+
+Azure Key Vault is an Azure service in which you can securely store secrets (such as passwords and keys). Access to the key vault is granted to security principals, which you can think of user identities that are authenticated using Azure Active Directory (Azure AD). Administrators can assign a security principal to an application (in which case it is known as a service principal) to define a managed identity for the application. The application can then use this identity to access the key vault and retrieve a secret to which it has access. Controlling access to the secret in this way minimizes the risk of it being compromised by being hard-coded in an application or saved in a configuration file.
+
+You can store the subscription keys for a cognitive services resource in Azure Key Vault, and assign a managed identity to client applications that need to use the service. The applications can then retrieve the key as needed from the key vault, without risk of exposing it to unauthorized users.
+
+**Token-based authentication**
+
+When using the REST interface, some Cognitive Services support (or even require) token-based authentication. In these cases, the subscription key is presented in an initial request to obtain an authentication token, which has a valid period of 10 minutes. Subsequent requests must present the token to validate that the caller has been authenticated.
+
 </details>
 
 
 <details><summary>Manage authentication for a resource</summary>
- 
-</details>
 
+**Protect keys with Azure Key Vault**
+
+Azure Key Vault is an Azure service in which you can securely store secrets (such as passwords and keys). Access to the key vault is granted to security principals, which you can think of user identities that are authenticated using Azure Active Directory (Azure AD). Administrators can assign a security principal to an application (in which case it is known as a service principal) to define a managed identity for the application. The application can then use this identity to access the key vault and retrieve a secret to which it has access. Controlling access to the secret in this way minimizes the risk of it being compromised by being hard-coded in an application or saved in a configuration file.
+
+You can store the subscription keys for a cognitive services resource in Azure Key Vault, and assign a managed identity to client applications that need to use the service. The applications can then retrieve the key as needed from the key vault, without risk of exposing it to unauthorized users.
+
+
+</details>
 
 <details><summary>Secure services by using Azure Virtual Networks</summary>
  
+ **Apply network access restrictions**
+
+By default, Cognitive Services are accessible from all networks. Some individual Cognitive Services resources (such as Text Analytics, Face, Computer Vision, and others) can be configured to restrict access to specific network addresses - either public Internet addresses or addresses on virtual networks.
+![App Screenshot](https://learn.microsoft.com/en-us/training/wwl-data-ai/secure-cognitive-services/media/network-access.png)
 </details>
 
 
@@ -116,28 +136,57 @@ Regenerate key 2.
 
 **Azure Storage** - a cloud-based data store that you can use to store log archives (which can be exported for analysis in other tools as needed).
 
+When you add diagnostic settings, you must specify:
+
+ 1. A name for your diagnostic settings.
+ 2. The categories of log event data that you want to capture.
+ 3. Details of the destinations in which you want to store the log data.
+
+It can take an hour or more before diagnostic data starts flowing to the destinations, but when the data has been captured, you can view it in your Azure log Analytics resource by running queries, as shown in this example.
 </details>
 
 
 <details><summary>Manage costs for Azure AI services</summary>
- ## Monitor Cognitive Services costs
+ 
+** Monitor Cognitive Services costs **
 To use the pricing calculator to estimate Cognitive Services costs, create a new estimate and select Azure Cognitive Services in the AI + Machine Learning category.
+
+ **View costs for Cognitive Services**
+
+In common with other Azure resources, you can view details of accumulated costs for Cognitive Services resources in the Azure portal.
+
+To view costs for Cognitive Services, sign into the Azure portal and select your subscription. You can then view overall costs for the subscription by selecting the Cost analysis tab. To view only costs for Cognitive Services, add a filter that restricts the data to reflect resources with a service name of azure cognitive services.
+
 </details>
 
 
 <details><summary>Monitor an Azure AI resource</summary>
- 
+ ** Alert rules **
+
+To create an alert rule for a Cognitive Services resource, select the resource in the Azure portal and on the Alerts tab, add a new alert rule. To define the alert rule, you must specify:
+
+1. The scope of the alert rule - in other words, the resource you want to monitor.
+2. A condition on which the alert is triggered. The specific trigger for the alert is based on a signal type, which can be Activity Log (an entry in the activity log created by an action performed on the resource, such as regenerating its subscription keys) or Metric (a metric threshold such as the number of errors exceeding 10 in an hour).
+3. Optional actions, such as sending an email to an administrator notifying them of the alert, or running an Azure Logic App to address the issue automatically.
+4. Alert rule details, such as a name for the alert rule and the resource group in which it should be defined.
+
+** View metrics in the Azure portal **
+You can view metrics for an individual resource in the Azure portal by selecting the resource and viewing its Metrics page. 
+** Add metrics to a dashboard **
+
+In the Azure portal, you can create dashboards that consist of multiple visualizations from different resources in your Azure environment to help you gain an overall view of the health and performance of your Azure resources.
+
 </details>
 
 ## Deploy Azure AI services ##
 
 <details><summary>Determine a default endpoint for a service</summary>
- 
+ Go to the service. In the left sidebar, choose "Keys and Endpoints". The default endpoint will be listed there.
 </details>
 
 
 <details><summary>Create a resource by using the Azure portal</summary>
- 
+ In the main portal page, chose the "create a resource" option in the top left. You can search your desired resource or choose one of the listed options. Then you configure how you want the resource deployed.
 </details>
 
 
@@ -176,23 +225,23 @@ To deploy and use a Cognitive Services container, the following three activities
 
 ![App Screenshot](https://learn.microsoft.com/en-us/training/wwl-data-ai/investigate-container-for-use-cognitive-services/media/cognitive-services-container.png)
 
-| Feature             | Image                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Key Phrase Extraction		 | This feature enables non-experts to quickly create an effective machine learning model from data.|
-| Language Detection	 | mcr.microsoft.com/azure-cognitive-services/language|
-| Sentiment Analysis v3 (English)	 | mcr.microsoft.com/azure-cognitive-services/sentiment:3.0-en
+Each container provides a subset of Cognitive Services functionality. For example, not all features of the Language service are in a single container. Language detection, translation, and sentiment analysis are each separate container images. 
 
-</details>
-
-
-<details><summary>Implement prebuilt containers in a connected environment</summary>
- When you deploy a Cognitive Services container image to a host, you must specify three settings.
+When you deploy a Cognitive Services container image to a host, you must specify three settings.
 
 | Setting             | Description                                                                |
 | ----------------- | ------------------------------------------------------------------ |
 | ApiKey		 | Key from your deployed Azure Cognitive Service; used for billing.|
 | Billing	 | Endpoint URI from your deployed Azure Cognitive Service; used for billing.|
 | Eula	 | Value of accept to state you accept the license for the container.
+
+**Consuming Cognitive Services from a Container**
+
+After your Cognitive Services container is deployed, applications consume the containerized Cognitive Services endpoint rather than the default Azure endpoint. The client application must be configured with the appropriate endpoint for your container, but does not need to provide a subscription key to be authenticated. You can implement your own authentication solution and apply network security restrictions as appropriate for your specific application scenario.
+</details>
+
+
+<details><summary>Implement prebuilt containers in a connected environment</summary>
 
 
 https://microsoftlearning.github.io/AI-102-AIEngineer/Instructions/04-use-a-container.html
@@ -1307,19 +1356,50 @@ https://learn.microsoft.com/en-us/rest/api/formrecognizer/2.0/get-analyze-form-r
  
 ## Analyze text
 <details><summary>Retrieve and process key phrases</summary>
- 
+ Key phrase extraction is the process of evaluating the text of a document, or documents, and then identifying the main points around the context of the document(s).
+
+Key phrase extraction works best for larger documents (the maximum size that can be analyzed is 5,120 characters).
 </details>
 
 <details><summary>Retrieve and process entities</summary>
- 
+ Named Entity Recognition identifies entities that are mentioned in the text. Entities are grouped into categories and subcategories, for example:
+
+ 1. Person
+ 2. Location
+ 3. DateTime
+ 4. Organization
+ 5. Address
+ 6. Email
+ 7. URL
+**Linked Entities**
+In some cases, the same name might be applicable to more than one entity. For example, does an instance of the word "Venus" refer to the planet or the goddess from mythology?
+
+Entity linking can be used to disambiguate entities of the same name by referencing an article in a knowledge base. Wikipedia provides the knowledge base for the Text Analytics service. Specific article links are determined based on entity context within the text.
 </details>
 
 <details><summary>Retrieve and process sentiment</summary>
- 
+ Sentiment analysis is used to evaluate how positive or negative a text document is, which can be useful in various workloads, such as:
+
+ 1. Evaluating a movie, book, or product by quantifying sentiment based on reviews.
+ 2. Prioritizing customer service responses to correspondence received through email or social media messaging.
+
+When using the Language service to evaluate sentiment, the response includes overall document sentiment and individual sentence sentiment for each document submitted to the service.
+
+Sentence sentiment is based on confidence scores for positive, negative, and neutral classification values between 0 and 1.
+
+Overall document sentiment is based on sentences:
+
+1.  If all sentences are neutral, the overall sentiment is neutral.
+2.  If sentence classifications include only positive and neutral, the overall sentiment is positive.
+3.  If the sentence classifications include only negative and neutral, the overall sentiment is negative.
+4.  If the sentence classifications include positive and negative, the overall sentiment is mixed.
+
 </details>
 
 <details><summary>Detect the language used in text</summary>
- 
+The Language Detection API evaluates text input and, for each document submitted, returns language identifiers with a score indicating the strength of the analysis. The Language service recognizes up to 120 languages.
+ You can parse the results of this analysis to determine which language is used in the input document. The response also returns a score, which reflects the confidence of the model (a value between 0 and 1).
+Language detection can work with documents or single phrases. It's important to note that the document size must be under 5,120 characters. The size limit is per document and each collection is restricted to 1,000 items (IDs).
 </details>
 
 <details><summary> Detect personally identifiable information (PII)</summary>
@@ -1328,15 +1408,58 @@ https://learn.microsoft.com/en-us/rest/api/formrecognizer/2.0/get-analyze-form-r
 
  ## Process speech
 <details><summary>Implement and customize text-to-speech</summary>
- 
+ Similarly to Speech to text APIs, the Speech service offers two REST APIs for speech synthesis:
+
+  1. The Text to speech API, which is the primary way to perform speech synthesis.
+  2. The Text to speech Long Audio API, which is designed to support batch operations that convert large volumes of text to audio - for example to generate an audio-book from the source text.
+ ![App Screenshot](https://learn.microsoft.com/en-us/training/wwl-data-ai/transcribe-speech-input-text/media/text-to-speech.png)
+
+ 1. Use a SpeechConfig object to encapsulate the information required to connect to your Speech resource. Specifically, its location and key.
+ 2. Optionally, use an AudioConfig to define the output device for the speech to be synthesized. By default, this is the default system speaker, but you can also specify an audio file, or by explicitly setting this value to a null value, you can process the audio stream object that is returned directly.
+ 3. Use the SpeechConfig and AudioConfig to create a SpeechSynthesizer object. This object is a proxy client for the Text to speech API.
+ 4. Use the methods of the SpeechSynthesizer object to call the underlying API functions. For example, the SpeakTextAsync() method uses the Speech service to convert text to spoken audio.
+ 5. Process the response from the Speech service. In the case of the SpeakTextAsync method, the result is a SpeechSynthesisResult object that contains the following properties:
+       - AudioData
+       - Properties
+       - Reason
+       - ResultId
+
+When speech has been successfully synthesized, the Reason property is set to the SynthesizingAudioCompleted enumeration and the AudioData property contains the audio stream (which, depending on the AudioConfig may have been automatically sent to a speaker or file).
 </details>
 
 <details><summary>Implement and customize speech-to-text</summary>
- 
+ The Speech service supports speech recognition through two REST APIs:
+
+ 1. The Speech to text API, which is the primary way to perform speech recognition.
+ 2. The Speech to text Short Audio API, which is optimized for short streams of audio (up to 60 seconds).
+
+ ![App Screenshot](https://learn.microsoft.com/en-us/training/wwl-data-ai/transcribe-speech-input-text/media/speech-to-text.png)
+1. Use a SpeechConfig object to encapsulate the information required to connect to your Speech resource. Specifically, its location and key.
+2. Optionally, use an AudioConfig to define the input source for the audio to be transcribed. By default, this is the default system microphone, but you can also specify an audio file.
+3. Use the SpeechConfig and AudioConfig to create a SpeechRecognizer object. This object is a proxy client for the Speech to text API.
+4. Use the methods of the SpeechRecognizer object to call the underlying API functions. For example, the RecognizeOnceAsync() method uses the Speech service to asynchronously transcribe a single spoken utterance.
+5. Process the response from the Speech service.
+If the operation was successful, the Reason property has the enumerated value RecognizedSpeech, and the Text property contains the transcription. Other possible values for Result include NoMatch (indicating that the audio was successfully parsed but no speech was recognized) or Canceled, indicating that an error occurred (in which case, you can check the Properties collection for the CancellationReason property to determine what went wrong.)
 </details>
 
 <details><summary>Improve text-to-speech by using SSML and Custom Neural Voice</summary>
- 
+ The Speech service provides multiple voices that you can use to personalize your speech-enabled applications. There are two kinds of voice that you can use:
+
+ -  Standard voices - synthetic voices created from audio samples.
+ -  Neural voices - more natural sounding voices created using deep neural networks.
+To specify a voice for speech synthesis in the SpeechConfig, set its SpeechSynthesisVoiceName property to the voice you want to use:
+ `speechConfig.SpeechSynthesisVoiceName = "en-GB-George";`
+
+**SSML**
+While the Speech SDK enables you to submit plain text to be synthesized into speech (for example, by using the SpeakTextAsync() method), the service also supports an XML-based syntax for describing characteristics of the speech you want to generate. This Speech Synthesis Markup Language (SSML) syntax offers greater control over how the spoken output sounds, enabling you to:
+
+-    Specify a speaking style, such as "excited" or "cheerful" when using a neural voice.
+-    Insert pauses or silence.
+-    Specify phonemes (phonetic pronunciations), for example to pronounce the text "SQL" as "sequel".
+-    Adjust the prosody of the voice (affecting the pitch, timbre, and speaking rate).
+-    Use common "say-as" rules, for example to specify that a given string should be expressed as a date, time, telephone number, or other form.
+-    Insert recorded speech or audio, for example to include a standard recorded message or simulate background noise.
+
 </details>
 
 <details><summary>Improve speech-to-text by using phrase lists and Custom Speech</summary>
@@ -1361,11 +1484,47 @@ https://learn.microsoft.com/en-us/rest/api/formrecognizer/2.0/get-analyze-form-r
 </details>
 
 <details><summary>Translate speech-to-speech by using the Speech service</summary>
- 
+ **Event-based synthesis**
+
+When you want to perform 1:1 translation (translating from one source language into a single target language), you can use event-based synthesis to capture the translation as an audio stream. To do this, you need to:
+
+  1.  Specify the desired voice for the translated speech in the TranslationConfig.
+  2.  Create an event handler for the TranslationRecognizer object's Synthesizing event.
+  3.  In the event handler, use the GetAudio() method of the Result parameter to retrieve the byte stream of translated audio.
+
+The specific code used to implement an event handler varies depending on the programming language you are using. See the C# and Python examples in the Speech SDK documentation.
+**Manual synthesis**
+
+Manual synthesis is an alternative approach to event-based synthesis that doesn't require you to implement an event handler. You can use manual synthesis to generate audio translations for one or more target languages.
+
+Manual synthesis of translations is essentially just the combination of two separate operations in which you:
+
+  1.  Use a TranslationRecognizer to translate spoken input into text transcriptions in one or more target languages.
+  2.  Iterate through the Translations dictionary in the result of the translation operation, using a SpeechSynthesizer to synthesize an audio stream for each language.
+
 </details>
 
 <details><summary>Translate speech-to-text by using the Speech service</summary>
- 
+ The pattern for speech translation using the Speech SDK is similar to speech recognition, with the addition of information about the source and target languages for translation:
+
+A TranslationRecognizer object is created from a SpeechConfig, TranslationConfig, and AudioConfig; and its RecognizeOnceAsync method is used to call the Speech API
+
+1. Use a SpeechTranslationConfig object to encapsulate the information required to connect to your Speech resource. Specifically, its location and key.
+2. The SpeechTranslationConfig object is also used to specify the speech recognition language (the language in which the input speech is spoken) and the target languages into which it should be translated.
+3. Optionally, use an AudioConfig to define the input source for the audio to be transcribed. By default, this is the default system microphone, but you can also specify an audio file.
+4. Use the SpeechTranslationConfig, and AudioConfig to create a TranslationRecognizer object. This object is a proxy client for the Speech service translation API.
+5. Use the methods of the TranslationRecognizer object to call the underlying API functions. For example, the RecognizeOnceAsync() method uses the Speech service to asynchronously translate a single spoken utterance.
+6. Process the response from the Speech service. In the case of the RecognizeOnceAsync() method, the result is a SpeechRecognitionResult object that includes the following properties:
+  -   Duration
+  -   OffsetInTicks
+  -   Properties
+  -   Reason
+  -   ResultId
+  -   Text
+  -   Translations
+
+
+
 </details>
 
 <details><summary>Translate to multiple languages simultaneously</summary>
@@ -1373,16 +1532,41 @@ https://learn.microsoft.com/en-us/rest/api/formrecognizer/2.0/get-analyze-form-r
 </details>
 
  ## Build and manage a language understanding model
+ It needs a Language resource unlike most services
 <details><summary>Create intents and add utterances</summary>
+ |Intents |utterance|
+ +
+ |Lamp_on| Turn on the lamp, light on, I need light|
+ |say_time| What time is it?, I want to know the time, Tell me the time
  
 </details>
 
 <details><summary>Create entities</summary>
- 
+ |Intents |Utterance|Entities|
+ +
+ |Lamp_on| Turn on the lamp in an hour| Time(in an hour)|
+ |Lamp_on| light on, I need light||
+ |say_time| What time is it?, I want to know the time ||
+ |say_time| Tell me the time in Montana|Location (Montana)
+ You can split entities into a few different component types:
+
+   - Learned entities are the most flexible kind of entity, and should be used in most cases. You define a learned component with a suitable name, and then associate words or phrases with it in training utterances. When you train your model, it learns to match the appropriate elements in the utterances with the entity.
+   - List entities are useful when you need an entity with a specific set of possible values - for example, days of the week. You can include synonyms in a list entity definition, so you could define a DayOfWeek entity that includes the values "Sunday", "Monday", "Tuesday", and so on; each with synonyms like "Sun", "Mon", "Tue", and so on.
+   - Prebuilt entities are useful for common types such as numbers, datetimes, and names. For example, when prebuilt components are added, you will automatically detect values such as "6" or organizations such as "Microsoft". You can see this article for a list of supported prebuilt entities.
+
 </details>
 
 <details><summary>Train evaluate, deploy, and test a language understanding model</summary>
- 
+ Creating a language understanding model is an iterative process with the following activities:
+
+![Diagram that shows the train, test, publish, review cycle.](https://learn.microsoft.com/en-us/training/wwl-data-ai/build-language-understanding-model/media/train-test-publish-review.png)
+
+ 1   Train a model to learn intents and entities from sample utterances.
+ 2   Test the model interactively or using a testing dataset with known labels
+ 3   Deploy a trained model to a public endpoint so client apps can use it
+ 4   Review predictions and iterate on utterances to train your model
+
+By following this iterative approach, you can improve the language model over time based on user input, helping you develop solutions that reflect the way users indicate their intents using natural language.
 </details>
 
 <details><summary>Optimize a Language Understanding (LUIS) model</summary>
